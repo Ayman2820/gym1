@@ -1,0 +1,196 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(3d-gym-equipment.jpg);
+}
+
+/* Body and Font */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: #1b1b1b;
+    color: #1b1a1a;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    color: #f3f0f0;
+    text-align: center;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.navbar .logo span {
+    color: #e8491d;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16rem;
+    
+    
+}
+
+
+.navbar .nav-links li a {
+    color: #f3eaea;
+    text-decoration: none;
+    
+    
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: #fff;
+    height: 2px;
+    width: 25px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('gym-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 span {
+    color: #e8491d;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+    padding: 2rem 0;
+    background: #030303;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-box {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-box .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    background: #1d1d1d;
+    color: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
